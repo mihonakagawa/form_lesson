@@ -1,1 +1,169 @@
 @charset "utf-8";
+
+/* 共通 */
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+p {
+  /* 基本のフォントサイズ */
+  font-size: 12px;
+}
+
+.wrapper {
+  background: #f2f6f7;
+  width: 100%;
+  padding: 32px 0;
+}
+
+.inner {
+  margin: 0 auto;
+  width: 640px;
+}
+
+.button {
+  padding: 13px;
+  box-sizing: border-box;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.defaultText{
+  color: #949697;
+}
+
+/* 共通 */
+
+/* 見出し */
+
+.main-content {
+  box-sizing: border-box;
+  margin-bottom: 32px;
+  padding: 48px 64px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 4px 0 rgb(0 0 0 / 18%);
+}
+
+.main-content h1 {
+  font-size: 24px;
+  text-align: center;
+  color: #545658;
+}
+
+/* 見出し */
+
+/* ___________________________
+facebook/Googleログイン ここから
+___________________________ */
+
+.account-log-in {
+  margin-top: 24px;
+}
+
+.columns {
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  margin-left: 8px;
+}
+
+.column:first-child {
+  margin-left: 0px;
+}
+
+.facebook-btn {
+  background-color: #3b5999;
+  border-color: #3b5999;
+  color: #fff;
+}
+
+.google-btn {
+  background-color: #fff;
+  color: #dd4b39;
+}
+
+.supplement-text {
+  margin-top: 8px;
+  text-align: center;
+}
+
+/* ___________________________
+facebook/Googleログイン ここまで
+___________________________ */
+
+/* ___________________________
+アカウント新規作成 ここから
+___________________________ */
+
+.account-create {
+  margin-top: 20px;
+}
+
+.devider {
+  position: relative;
+  text-align: center;
+}
+
+.devider p {
+  /* display: inline-block; */
+  position: relative;
+  padding: 0 10px;
+  background-color: #fff;
+}
+
+.devider::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 1px;
+  width: 100%;
+  background-color: #ececec;
+}
+
+.form {
+  margin-top: 20px;
+}
+
+.label-text {
+  color: #545658;
+}
+
+
+.submit-btn {
+  padding: 13px;
+  background-color: #01bfbd;
+  color: #fff;
+}
+
+.foot-part {
+  text-align: center;
+}
+
+.link-color {
+  color: #01bfbd;
+}
+
+/* ___________________________
+アカウント新規作成 ここまで
+___________________________ */
+
