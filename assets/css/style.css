@@ -12,6 +12,14 @@ p {
   font-size: 12px;
 }
 
+input,
+button,
+select,
+textarea {
+  -webkit-appearance: none;
+}
+
+
 .wrapper {
   background: #f2f6f7;
   width: 100%;
@@ -47,13 +55,29 @@ p {
   color: #949697;
 }
 
+.row {
+  margin-top: 20px;
+}
+
+.input {
+  box-sizing: border-box;
+  height: 36px;
+  width: 100%;
+  padding: 5px;
+  color: #545658;
+  font-size: 13px;
+  line-height: 2;
+  background-color: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+}
+
 /* 共通 */
 
 /* 見出し */
 
 .main-content {
   box-sizing: border-box;
-  margin-bottom: 32px;
   padding: 48px 64px;
   background-color: #fff;
   border-radius: 4px;
@@ -123,7 +147,7 @@ ___________________________ */
 }
 
 .devider p {
-  /* display: inline-block; */
+  display: inline-block;
   position: relative;
   padding: 0 10px;
   background-color: #fff;
@@ -148,6 +172,25 @@ ___________________________ */
   color: #545658;
 }
 
+.alert {
+  color: #dd4b39;
+}
+
+.name {
+  margin-left: 16px;
+}
+
+.name:first-child {
+  margin-left: 0;
+}
+
+.password {
+  margin-top: 20px;
+}
+
+.password:first-child {
+  margin-top: 0;
+}
 
 .submit-btn {
   padding: 13px;
@@ -157,11 +200,22 @@ ___________________________ */
 
 .foot-part {
   text-align: center;
+  margin-top: 32px;
 }
 
 .link-color {
   color: #01bfbd;
+  font-size: 12px;
 }
+
+.resend-mail {
+  margin-top: 8px;
+}
+
+.remarks {
+  height: 100%;
+}
+
 
 /* ___________________________
 アカウント新規作成 ここまで
