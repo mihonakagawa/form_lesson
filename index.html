@@ -48,48 +48,53 @@
                 </div>
               </div>
               <!-- 性別 -->
-              <div class="row gender">
+              <div class="row">
                 <p class="label-text">
                   性別
                 </p>
-                <div class="radio-box">
-                  <label for="">
-                    <input type="radio" name="gender" value="male">男性
+                <div class="gender-select">
+                  <label class="gender" for="#">
+                    <input class="radio-btn" type="radio" name="gender" value="male">
+                    <span>男性</span>
                   </label>
-                  <label for="">
-                    <input type="radio" name="gender" value="female">女性
+                  <label class="gender" for="#">
+                    <input class="radio-btn" type="radio" name="gender" value="female">
+                    <span>女性</span>
                   </label>
-                  <label for="">
-                    <input type="radio" name="gender" value="other">その他
+                  <label class="gender" for="#">
+                    <input class="radio-btn" type="radio" name="gender" value="other">
+                    <span>その他</span>
                   </label>
                 </div>
               </div>
               <!-- 出身 -->
-              <div class="row origin">
+              <div class="row">
                 <div class="half-width">
                   <p class="label-text">
                     出身
                   </p>
-                  <select name="origin" id="origin" class="input">
-                    <option value="東京">東京</option>
-                    <option value="千葉">千葉</option>
-                    <option value="埼玉">埼玉</option>
-                    <option value="神奈川">神奈川</option>
-                  </select>
+                  <div class="origin">
+                    <select name="origin" id="origin" class="input">
+                      <option value="東京">東京</option>
+                      <option value="千葉">千葉</option>
+                      <option value="埼玉">埼玉</option>
+                      <option value="神奈川">神奈川</option>
+                    </select>
+                  </div>
                 </div>
               </div>
               <!-- Eメール -->
-              <div class="row email">
+              <div class="row">
                 <div class="full-width">
                   <p class="label-text">
                     Eメール
                     <span class="alert"> ※</span>
                   </p>
-                  <input type="email" name="email" class="input" required>
+                  <input type="email" name="email" class="input" placeholder="ex) hoge@example.com" required>
                 </div>
               </div>
               <!-- 電話番号 -->
-              <div class="row tel">
+              <div class="row">
                 <div class="full-width">
                   <p class="label-text">
                     電話番号
@@ -116,35 +121,44 @@
                 </div>
               </div>
               <!-- 希望コース -->
-              <div class="row course">
+              <div class="row">
                 <p class="label-text">
-                  性別
+                  希望コース
                 </p>
-                <div class="check-box">
-                  <label for="">
-                    <input type="checkbox" name="course" value="frontend">フロントエンド
-                  </label>
-                  <label for="">
-                    <input type="checkbox" name="course" value="backend">バックエンド
-                  </label>
-                  <label for="">
-                    <input type="checkbox" name="course" value="app">アプリ
-                  </label>
+                <div class="check-box flexbox">
+                  <div class="course-option">
+                    <label class="course-option__label" for="#">
+                      <input type="checkbox" name="course" class="course-select" value="frontend">
+                      <span>フロントエンド</span>
+                    </label>
+                  </div>
+                  <div class="course-option">
+                    <label class="course-option__label" for="#">
+                      <input type="checkbox" name="course" class="course-select" value="backend">
+                      <span>バックエンド</span>
+                    </label>
+                  </div>
+                  <div class="course-option">
+                    <label class="course-option__label" for="#">
+                      <input type="checkbox" name="course" class="course-select" value="app">
+                      <span>アプリ</span>
+                    </label>
+                  </div>
                 </div>
               </div>
               <!-- 備考 -->
-              <div class="row remarks">
+              <div class="row">
                 <p class="label-text">
                   備考
                 </p>
-                <textarea name="remarks" class="input remarks" placeholder="何かあればご記入ください"></textarea>
+                <textarea name="remarks" class="input remarks-textarea" placeholder="何かあればご記入ください"></textarea>
               </div>
               <!-- 送信ボタン -->
-              <div class="row submit">
-                <input type="submit" value="アカウント作成" class="button submit-btn input">
+              <div class="row full-width submit">
+                <input type="submit" value="アカウント作成" class="button submit-btn">
               </div>
               <div class="row agreement">
-                <p>アカウントを作成することにより、利用規約とプライバシーポリシーに同意するものとします。</p>
+                <p>アカウントを作成することにより、<a class="anchor link-color" href="#">利用規約</a>と<a class="anchor link-color" href="#">プライバシーポリシー</a>に同意するものとします。</p>
               </div>
             </form>
           </div>
@@ -152,9 +166,9 @@
         <div class="foot-part">
           <p>
             すでにアカウントをお持ちですか？
-            <a class="link-color" href="#">ログイン</a>
+            <a class="anchor link-color log-in" href="#">ログイン</a>
           </p>
-          <a class="link-color resend-mail" href="#">認証メールが届きませんか？</a>
+          <a class="anchor link-color resend-mail" href="#">認証メールが届きませんか？</a>
 
         </div>
       </div>
