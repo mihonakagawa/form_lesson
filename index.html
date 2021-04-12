@@ -16,12 +16,8 @@
           <h1>アカウント作成</h1>
           <div class="account-log-in">
             <div class="columns flexbox">
-              <a class="column button facebook-btn half-width" href="#">
-                Facebookでスタート
-              </a>
-              <a class="column button google-btn half-width" href="#">
-                Googleでスタート
-              </a>
+              <a class="column button facebook-btn half-width" href="#">Facebookでスタート</a>
+              <a class="column button google-btn half-width" href="#">Googleでスタート</a>
             </div>
             <p class="supplement-text defaultText">タイムラインへ投稿を行うことや、アカウント情報を伝えることはありません。</p>
           </div>
@@ -33,17 +29,11 @@
               <!-- 名前 -->
               <div class="row flexbox">
                 <div class="half-width name">
-                  <p class="label-text">
-                    名字
-                    <span class="alert"> ※</span>
-                  </p>
+                  <p class="label-text">名字<span class="alert">※</span></p>
                   <input type="text" name="last_name" class="input input-area" required>
                 </div>
                 <div class="half-width name">
-                  <p class="label-text">
-                    名前
-                    <span class="alert"> ※</span>
-                  </p>
+                  <p class="label-text">名前<span class="alert">※</span></p>
                   <input type="text" name="first_name" class="input input-area" required>
                 </div>
               </div>
@@ -70,9 +60,7 @@
               <!-- 出身 -->
               <div class="row">
                 <div class="half-width">
-                  <p class="label-text">
-                    出身
-                  </p>
+                  <p class="label-text">出身</p>
                   <div class="origin">
                     <select name="origin" id="origin" class="input input-area">
                       <option value="東京">東京</option>
@@ -85,37 +73,23 @@
               </div>
               <!-- Eメール -->
               <div class="row">
-                <div class="full-width">
-                  <p class="label-text">
-                    Eメール
-                    <span class="alert"> ※</span>
-                  </p>
-                  <input type="email" name="email" class="input input-area" placeholder="ex) hoge@example.com" required>
-                </div>
+                <p class="label-text">Eメール<span class="alert">※</span></p>
+                <input type="email" name="email" class="input input-area" placeholder="ex) hoge@example.com" required>
               </div>
               <!-- 電話番号 -->
               <div class="row">
-                <div class="full-width">
-                  <p class="label-text">
-                    電話番号
-                  </p>
-                  <input type="tel" name="tel" class="input input-area" placeholder="ex)09012345678">
-                </div>
+                <p class="label-text">電話番号</p>
+                <input type="tel" name="tel" class="input input-area" placeholder="ex)09012345678">
               </div>
               <!-- パスワード -->
               <div class="row">
-                <div class="full-width password">
-                  <p class="label-text">
-                    パスワード
-                    <span class="alert"> ※</span>
-                  </p>
+                <div class="password">
+                  <p class="label-text">パスワード<span class="alert">※</span></p>
                   <input type="password" name="password" class="input input-area" required>
                 </div>
                 <!-- 確認用 -->
-                <div class="full-width password">
-                  <p class="label-text">
-                    パスワード(確認用)
-                    <span class="alert"> ※</span>
+                <div class="password">
+                  <p class="label-text">パスワード(確認用)<span class="alert">※</span>
                   </p>
                   <input type="password" name="password" class="input input-area" required>
                 </div>
@@ -148,7 +122,7 @@
                 <textarea name="remarks" class="input input-area remarks-textarea" placeholder="何かあればご記入ください"></textarea>
               </div>
               <!-- 送信ボタン -->
-              <div class="row full-width submit">
+              <div class="row submit">
                 <input type="submit" value="アカウント作成" class="button submit-btn">
               </div>
               <div class="row agreement">
@@ -158,15 +132,10 @@
           </div>
         </div>
         <div class="foot-part">
-          <p>
-            すでにアカウントをお持ちですか？
-            <a class="anchor link-color log-in" href="#">ログイン</a>
-          </p>
-          <a class="anchor link-color resend-mail" href="#">認証メールが届きませんか？</a>
-
+          <p>すでにアカウントをお持ちですか？<a class="link-color log-in" href="#">ログイン</a></p>
+          <a class="link-color resend-mail" href="#">認証メールが届きませんか？</a>
         </div>
       </div>
     </section>
-
   </body>
 </html>

@@ -18,17 +18,17 @@ p {
 
 select,
 textarea,
-.input {
+input {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   background: transparent;
+  resize: none;
   border: none;
   border-radius: 0;
   font: inherit;
   outline: none;
 }
-
 
 .wrapper {
   background: #f2f6f7;
@@ -118,14 +118,18 @@ input[type="checkbox"] {
   font-size: 12px;
 }
 
-.submit-btn:hover,
 .anchor:hover {
   opacity: 0.8;
 }
 
 .log-in:hover,
 .resend-mail:hover {
-  border-bottom: 1px solid #01bfbd;
+  /* border-bottom: 1px solid #01bfbd; */
+  text-decoration: underline;
+}
+
+.submit-btn:hover {
+  background-color: #01a6a4;
 }
 
 /* ホバーありまとめ */
@@ -141,9 +145,10 @@ input[type="checkbox"] {
 }
 
 .main-content h1 {
-  font-size: 24px;
   text-align: center;
+  margin-bottom: 24px;
   color: #545658;
+  font-size: 24px;
 }
 
 /* 見出し */
@@ -394,6 +399,11 @@ ___________________________ */
   background-color: #01bfbd;
   color: #fff;
   width: 100%;
+}
+
+.submit-btn:active {
+  background-color: #fff;
+  color: #01bfbd;
 }
 
 /* 送信ボタン */
