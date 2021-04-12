@@ -112,6 +112,7 @@ input[type="checkbox"] {
 .link-color {
   color: #01bfbd;
   font-size: 12px;
+  line-height: 16px;
 }
 
 .anchor:hover {
@@ -412,7 +413,7 @@ ___________________________ */
 }
 
 .resend-mail {
-  margin-top: 8px;
+  margin: 8px 0;
 }
 
 /* フッター */
