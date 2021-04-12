@@ -2,6 +2,10 @@
 
 /* 共通 */
 
+body {
+  line-height: 1em;
+}
+
 a {
   display: inline-block;
   text-decoration: none;
@@ -13,10 +17,16 @@ p {
 }
 
 select,
-input[type="radio"],
-input[type="checkbox"],
-textarea {
+textarea,
+.input {
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  font: inherit;
+  outline: none;
 }
 
 
@@ -70,22 +80,42 @@ textarea {
   line-height: 2;
   background-color: #fbfbfb;
   border: 1px solid #d9d9d9;
-  /* outline: 1px solid #d9d9d9; */
   border-radius: 3px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  display: none;
+}
+
+.input-area:focus {
+  background-color: #fff;
+  border-color: rgba(59, 133, 133, .4);
+  box-shadow: 0 0 0 2px rgb(1 191 189 / 10%);
 }
 
 /* 共通 */
 
 /* ホバーありまとめ */
 
+.button,
+.anchor,
+.submit-btn {
+  transition: all .3s;
+}
+
+.facebook-btn:hover {
+  background-color: #344e87;
+  border-color: transparent;
+}
+
+.google-btn:hover {
+  background-color: #fbfbfb;
+}
+
 .link-color {
   color: #01bfbd;
   font-size: 12px;
-}
-
-.submit-btn,
-.anchor {
-  transition: all .3s;
 }
 
 .submit-btn:hover,
@@ -219,7 +249,6 @@ ___________________________ */
 .gender {
   margin-left: 15px;
   cursor: pointer;
-  position: relative;
 }
 
 .gender:first-child {
@@ -230,13 +259,14 @@ ___________________________ */
   margin-top: 5px;
 }
 
-.gender span {
+.gender-span {
   font-size: 16px;
-  padding: 3px 3px 3px 10px;
+  padding: 3px 3px 3px 20px;
   color: #545658;
+  position: relative;
 }
 
-.gender span::before {
+.gender-span::before {
   content: '';
   position: absolute;
   left: 0;
@@ -249,7 +279,7 @@ ___________________________ */
   border-radius: 50%;
 }
 
-.radio-btn:checked + .gender span::before {
+.radio-btn:checked+.gender-span::after {
   content: '';
   position: absolute;
   left: 4px;
@@ -308,10 +338,15 @@ ___________________________ */
   position: relative;
 }
 
-.course-option__label span {
+.course-option:first-child {
+  margin-top: 0;
+}
+
+.course-option__label {
+  cursor: pointer;
+  padding-left: 25px;
   color: #545658;
   font-size: 16px;
-  padding: 3px 3px 3px 10px;
 }
 
 .course-option__label::before {
@@ -325,7 +360,7 @@ ___________________________ */
   border: 1px solid #d9d9d9;
 }
 
-.course-select:checked + .course-option__label::after {
+.course-option input:checked + .course-option__label::after {
   content: '';
   position: absolute;
   left: 6px;
@@ -336,10 +371,6 @@ ___________________________ */
   margin-top: -12px;
   border-right: 3px solid #01bfbd;
   border-bottom: 3px solid #01bfbd;
-}
-
-.course-option:first-child {
-  margin-top: 0;
 }
 
 /* 希望コース */

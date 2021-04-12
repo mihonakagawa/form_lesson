@@ -37,14 +37,14 @@
                     名字
                     <span class="alert"> ※</span>
                   </p>
-                  <input type="text" name="last_name" class="input" required>
+                  <input type="text" name="last_name" class="input input-area" required>
                 </div>
                 <div class="half-width name">
                   <p class="label-text">
                     名前
                     <span class="alert"> ※</span>
                   </p>
-                  <input type="text" name="first_name" class="input" required>
+                  <input type="text" name="first_name" class="input input-area" required>
                 </div>
               </div>
               <!-- 性別 -->
@@ -53,17 +53,17 @@
                   性別
                 </p>
                 <div class="gender-select">
-                  <label class="gender" for="#">
-                    <input class="radio-btn" type="radio" name="gender" value="male">
-                    <span>男性</span>
+                  <label class="gender" for="male">
+                    <input class="radio-btn" type="radio" id="male" name="gender" value="male">
+                    <span class="gender-span">男性</span>
                   </label>
-                  <label class="gender" for="#">
-                    <input class="radio-btn" type="radio" name="gender" value="female">
-                    <span>女性</span>
+                  <label class="gender" for="female">
+                    <input class="radio-btn" type="radio" id="female" name="gender" value="female">
+                    <span class="gender-span">女性</span>
                   </label>
-                  <label class="gender" for="#">
-                    <input class="radio-btn" type="radio" name="gender" value="other">
-                    <span>その他</span>
+                  <label class="gender" for="other">
+                    <input class="radio-btn" type="radio" id="other" name="gender" value="other">
+                    <span class="gender-span">その他</span>
                   </label>
                 </div>
               </div>
@@ -74,7 +74,7 @@
                     出身
                   </p>
                   <div class="origin">
-                    <select name="origin" id="origin" class="input">
+                    <select name="origin" id="origin" class="input input-area">
                       <option value="東京">東京</option>
                       <option value="千葉">千葉</option>
                       <option value="埼玉">埼玉</option>
@@ -90,7 +90,7 @@
                     Eメール
                     <span class="alert"> ※</span>
                   </p>
-                  <input type="email" name="email" class="input" placeholder="ex) hoge@example.com" required>
+                  <input type="email" name="email" class="input input-area" placeholder="ex) hoge@example.com" required>
                 </div>
               </div>
               <!-- 電話番号 -->
@@ -99,7 +99,7 @@
                   <p class="label-text">
                     電話番号
                   </p>
-                  <input type="tel" name="tel" class="input" placeholder="ex)09012345678">
+                  <input type="tel" name="tel" class="input input-area" placeholder="ex)09012345678">
                 </div>
               </div>
               <!-- パスワード -->
@@ -109,7 +109,7 @@
                     パスワード
                     <span class="alert"> ※</span>
                   </p>
-                  <input type="password" name="password" class="input" required>
+                  <input type="password" name="password" class="input input-area" required>
                 </div>
                 <!-- 確認用 -->
                 <div class="full-width password">
@@ -117,7 +117,7 @@
                     パスワード(確認用)
                     <span class="alert"> ※</span>
                   </p>
-                  <input type="password" name="password" class="input" required>
+                  <input type="password" name="password" class="input input-area" required>
                 </div>
               </div>
               <!-- 希望コース -->
@@ -127,22 +127,16 @@
                 </p>
                 <div class="check-box flexbox">
                   <div class="course-option">
-                    <label class="course-option__label" for="#">
-                      <input type="checkbox" name="course" class="course-select" value="frontend">
-                      <span>フロントエンド</span>
-                    </label>
+                    <input type="checkbox" name="course" class="course-select" id="frontend" value="frontend">
+                    <label class="course-option__label" for="frontend">フロントエンド</label>
                   </div>
                   <div class="course-option">
-                    <label class="course-option__label" for="#">
-                      <input type="checkbox" name="course" class="course-select" value="backend">
-                      <span>バックエンド</span>
-                    </label>
+                    <input type="checkbox" name="course" class="course-select" id="backend" value="backend">
+                    <label class="course-option__label" for="backend">バックエンド</label>
                   </div>
                   <div class="course-option">
-                    <label class="course-option__label" for="#">
-                      <input type="checkbox" name="course" class="course-select" value="app">
-                      <span>アプリ</span>
-                    </label>
+                    <input type="checkbox" name="course" class="course-select" id="app" value="app">
+                    <label class="course-option__label" for="app">アプリ</label>
                   </div>
                 </div>
               </div>
@@ -151,7 +145,7 @@
                 <p class="label-text">
                   備考
                 </p>
-                <textarea name="remarks" class="input remarks-textarea" placeholder="何かあればご記入ください"></textarea>
+                <textarea name="remarks" class="input input-area remarks-textarea" placeholder="何かあればご記入ください"></textarea>
               </div>
               <!-- 送信ボタン -->
               <div class="row full-width submit">
